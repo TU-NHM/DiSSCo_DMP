@@ -7,6 +7,26 @@ Data Management Plan for DiSSCo infrastructure.
 | 03.01.2025, v0.1 | Kessy Abarenkov | Adding basic structure and initial content |
 
 ## Table of Contents
+1. [Introduction](#introduction)
+2. [Lifecycle of DiSSCo Data](#lifecycle-of-dissco-data)
+3. [Protected characteristics](#protected-characteristics)
+4. [DiSSCo data summary](#dissco-data-summary)
+5. [FAIR](#fair)
+   - [Making data findable](#making-data-findable)
+   - [Making data openly accessible](#making-data-openly-accessible)
+   - [Making data interoperable](#making-data-interoperable)
+   - [Increasing data re-use](#increasing-data-re-use)
+6. [Identification of DiSSCo Data](#identification-of-dissco-data)
+7. [Mutability, versioning and obsolescence](#mutability-versioning-and-obsolescence)
+8. [Service management and service level agreements](#service-management-and-service-level-agreements)
+9. [Data quality and minimum information standards](#data-quality-and-minimum-information-standards)
+10. [Data security](#data-security)
+11. [Data provenance](#data-provenance)
+12. [Ethical and legal aspects](#ethical-and-legal-aspects)
+    - [Compliance with GDPR](#compliance-with-gdpr)
+13. [Software maintenance and sustainability](#software-maintenance-and-sustainability)
+14. [Machine-actionable DMP for DiSSCo Infrastructure](#machineactionable-dmp-for-dissco-infrastructure)
+15. [Glossary of terms and abbreviations](#glossary-of-terms-and-abbreviations)
 
 ## List of Tables
 
@@ -24,35 +44,35 @@ The current Data Management Plan (DMP) for the DiSSCo infrastructure has been pr
 ## Summary of DiSSCo data management principles
 The DiSSCo data management principles can be summarized as the following:
 
-DMpr 1: All design decisions (technical, procedural, organisational, etc.) must be assessed for their effect on the protected characteristics. Such decisions and changes must not destroy or lessen the protected characteristics. (ref)
+**DMpr 1:** All design decisions (technical, procedural, organisational, etc.) must be assessed for their effect on the protected characteristics. Such decisions and changes must not destroy or lessen the protected characteristics. (ref)
 
-DMpr 2: Digitisation is the process of making physical objects digitally available, and the output of that process is Digital Specimens and Digital Collections. (ref)
+**DMpr 2:** Digitisation is the process of making physical objects digitally available, and the output of that process is Digital Specimens and Digital Collections. (ref)
 
-DMpr 3: DiSSCo treats data as digital objects, each having a persistent identifier (pid) and a type. (ref)
+**DMpr 3:** DiSSCo treats data as digital objects, each having a persistent identifier (pid) and a type. (ref)
 
-DMpr 4: A link must be maintained by the Digital Specimen to the physical specimen it represents. This link is the identifier of the physical specimen. (ref)
+**DMpr 4:** A link must be maintained by the Digital Specimen to the physical specimen it represents. This link is the identifier of the physical specimen. (ref)
 
-DMpr 5: DiSSCo Facilities are encouraged to publish the fullest available digital data about their individual specimens and collections at the earliest opportunity, aiming as best practice to achieve at least MIDS level 2 for Digital Specimens and MICS level 2 for Digital Collections information. (ref)
+**DMpr 5:** DiSSCo Facilities are encouraged to publish the fullest available digital data about their individual specimens and collections at the earliest opportunity, aiming as best practice to achieve at least MIDS level 2 for Digital Specimens and MICS level 2 for Digital Collections information. (ref)
 
-DMpr 6: The principal digital object types to be managed by DiSSCo are: Collection and DigitalSpecimen. Other object types include: StorageContainer, SpecimenCategory, Presentation, Gathering, Annotation, Interpretation, and Provenance. (ref)
+**DMpr 6:** The principal digital object types to be managed by DiSSCo are: Collection and DigitalSpecimen. Other object types include: StorageContainer, SpecimenCategory, Presentation, Gathering, Annotation, Interpretation, and Provenance. (ref)
 
-DMpr 7: Management of the DiSSCo digital object types shall be based on the general principles of the DiSSCo Data Management Plan, supplemented where necessary with additional management requirements for specific object types. (ref)
+**DMpr 7:** Management of the DiSSCo digital object types shall be based on the general principles of the DiSSCo Data Management Plan, supplemented where necessary with additional management requirements for specific object types. (ref)
 
-DMpr 8: Provenance data must be generated and preserved by all operations acting upon DiSSCo data objects. (ref)
+**DMpr 8:** Provenance data must be generated and preserved by all operations acting upon DiSSCo data objects. (ref)
 
-DMpr 9: DiSSCo digital objects must be serialized as JSON [ECMA-404], as specified in section 4 and appendix A of the Digital Object Interface Protocol specification (DOIP) [DOIP 2.0 2018]. (ref)
+**DMpr 9:** DiSSCo digital objects must be serialized as JSON [ECMA-404], as specified in section 4 and appendix A of the Digital Object Interface Protocol specification (DOIP) [DOIP 2.0 2018]. (ref)
 
-DMpr 10: Information about Digital Specimens and Digital Collections must be published and managed as part of the European Collection Objects Index. (ref)
+**DMpr 10:** Information about Digital Specimens and Digital Collections must be published and managed as part of the European Collection Objects Index. (ref)
 
-DMpr 11: Each Digital Specimen or other digital object instance handled by the DiSSCo infrastructure must be unambiguously, universally and persistently identified by a Natural Science Identifier (NSId), which shall be assigned when the object is first created. (ref)
+**DMpr 11:** Each Digital Specimen or other digital object instance handled by the DiSSCo infrastructure must be unambiguously, universally and persistently identified by a Natural Science Identifier (NSId), which shall be assigned when the object is first created. (ref)
 
-DMpr 12: Each DiSSCo Facility shall be responsible for creating (minting) and managing their own NSIds in accordance with the DiSSCo policy for NSIds, and for registering their own Digital Specimens with the DiSSCo Hub infrastructure. (ref)
+**DMpr 12:** Each DiSSCo Facility shall be responsible for creating (minting) and managing their own NSIds in accordance with the DiSSCo policy for NSIds, and for registering their own Digital Specimens with the DiSSCo Hub infrastructure. (ref)
 
-DMpr 13: Resolution of an NSId shall always return the current version of an object’s content, as well as any interpretations and annotations associated with it. (ref)
+**DMpr 13:** Resolution of an NSId shall always return the current version of an object’s content, as well as any interpretations and annotations associated with it. (ref)
 
-DMpr 14: The principle object types in DiSSCo (Digital Specimens, Digital Collections) are treated as mutable objects with access control and object history (provenance). (ref)
+**DMpr 14:** The principle object types in DiSSCo (Digital Specimens, Digital Collections) are treated as mutable objects with access control and object history (provenance). (ref)
 
-DMpr 15: Timestamped records of change (provenance data) must be kept, allowing reconstruction of a specific ‘version’ of a digital object at a date and time in the past. (ref)
+**DMpr 15:** Timestamped records of change (provenance data) must be kept, allowing reconstruction of a specific ‘version’ of a digital object at a date and time in the past. (ref)
 
 ## Introduction
 DiSSCo, the Distributed System of Scientific Collections, is a state-of-the-art Research Infrastructure (RI) for natural science collections. Its goal is to digitally unify all European natural science assets into a single, integrated European collection, providing common access, standardised curation, and harmonised policies and practices across countries. With more than 200 institutions across 23 countries, DiSSCo offers uniform access to carefully curated natural science collections (i.e., data about physical specimens) within a community curation space open to contributions from diverse sources of expertise. Contributions to the data will no longer be limited by the capacities of collection-holding institutions, thus widening the base for generating new scientific knowledge. 
@@ -96,5 +116,7 @@ This document, the DiSSCo Data Management Plan (DiSSCo DMP), is a living documen
 ### Compliance with GDPR
 
 ## Software maintenance and sustainability
+
+## Machine-actionable DMP for DiSSCo Infrastructure
 
 ## Glossary of terms and abbreviations
