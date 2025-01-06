@@ -38,6 +38,7 @@ Data Management Plan for DiSSCo infrastructure.
 The current Data Management Plan (DMP) for the DiSSCo infrastructure has been prepared as part of deliverable D3.3 of the DiSCCo Transition project. The DiSSCo DMP, initially published during the ICEDIG project ([D6.6](https://doi.org/10.5281/zenodo.3532937)) and later supplemented by the DiSSCo Prepare (D6.4) and DiSSCo Transition ([D5.1](https://doi.org/10.5281/zenodo.11451849)) projects, has been revised to reflect the project's status at the time of this deliverable. To improve accessibility, facilitate management, and track updates and changes, the provisional DMP has been updated and migrated to GitHub for ongoing revisions. One of the aims of deliverable D3.3 was to make the DMP machine-actionable, in alignment with the Research Data Alliance (RDA) DMP Common Standard for machine-actionable Data Management Plans [http://doi.org/10.15497/rda00039](http://doi.org/10.15497/rda00039). The test implementation of the maDMP for the DiSSCo infrastructure has been developed on the [PlutoF](https://plutof.ut.ee) platform.
 
 ### Acknowledgements
+The following individuals are gratefully acknowledged for their contributions to the present document:
 
 ## Executive summary
 
