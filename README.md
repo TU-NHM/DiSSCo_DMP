@@ -8,25 +8,31 @@ Data Management Plan for DiSSCo infrastructure.
 
 ## Table of Contents
 1. [Introduction](#introduction)
-2. [Lifecycle of DiSSCo Data](#lifecycle-of-dissco-data)
-3. [Protected characteristics](#protected-characteristics)
-4. [DiSSCo data summary](#dissco-data-summary)
-5. [FAIR](#fair)
-   - 5.1 [Making data findable](#making-data-findable)
-   - 5.2 [Making data openly accessible](#making-data-openly-accessible)
-   - 5.3 [Making data interoperable](#making-data-interoperable)
-   - 5.4 [Increasing data re-use](#increasing-data-re-use)
-6. [Identification of DiSSCo Data](#identification-of-dissco-data)
-7. [Mutability, versioning and obsolescence](#mutability-versioning-and-obsolescence)
-8. [Service management and service level agreements](#service-management-and-service-level-agreements)
-9. [Data quality and minimum information standards](#data-quality-and-minimum-information-standards)
-10. [Data security](#data-security)
-11. [Data provenance](#data-provenance)
-12. [Ethical and legal aspects](#ethical-and-legal-aspects)
-    - 12.1 [Compliance with GDPR](#compliance-with-gdpr)
-13. [Software maintenance and sustainability](#software-maintenance-and-sustainability)
-14. [Machine-actionable DMP for DiSSCo Infrastructure](#machine-actionable-dmp-for-dissco-infrastructure)
-15. [Glossary of terms and abbreviations](#glossary-of-terms-and-abbreviations)
+2. [Digital Object Architecture as the basis](#digital-object-architecture-as-the-basis)
+3. [Lifecycle of DiSSCo Data](#lifecycle-of-dissco-data)
+   - 3.1 [Data acquisition](#data-acquisition)
+   - 3.2 [Data curation](#data-curation)
+   - 3.3 [Data publishing](#data-publishing)
+   - 3.4 [Data processing](#data-processing)
+   - 3.5 [Data use](#data-use)
+4. [Protected characteristics](#protected-characteristics)
+5. [DiSSCo data summary](#dissco-data-summary)
+6. [FAIR](#fair)
+   - 6.1 [Making data findable](#making-data-findable)
+   - 6.2 [Making data openly accessible](#making-data-openly-accessible)
+   - 6.3 [Making data interoperable](#making-data-interoperable)
+   - 6.4 [Increasing data re-use](#increasing-data-re-use)
+7. [Identification of DiSSCo Data](#identification-of-dissco-data)
+8. [Mutability, versioning and obsolescence](#mutability-versioning-and-obsolescence)
+9. [Service management and service level agreements](#service-management-and-service-level-agreements)
+10. [Data quality and minimum information standards](#data-quality-and-minimum-information-standards)
+11. [Data security](#data-security)
+12. [Data provenance](#data-provenance)
+13. [Ethical and legal aspects](#ethical-and-legal-aspects)
+    - 13.1 [Compliance with GDPR](#compliance-with-gdpr)
+14. [Software maintenance and sustainability](#software-maintenance-and-sustainability)
+15. [Machine-actionable DMP for DiSSCo Infrastructure](#machine-actionable-dmp-for-dissco-infrastructure)
+16. [Glossary of terms and abbreviations](#glossary-of-terms-and-abbreviations)
 
 ## List of Tables
 
@@ -35,7 +41,7 @@ Data Management Plan for DiSSCo infrastructure.
 ## Preface
 
 ### Status
-The current Data Management Plan (DMP) for the DiSSCo infrastructure has been prepared as part of deliverable D3.3 of the DiSCCo Transition project. The DiSSCo DMP, initially published during the ICEDIG project ([D6.6](https://doi.org/10.5281/zenodo.3532937)) and later supplemented by the DiSSCo Prepare (D6.4) and DiSSCo Transition ([D5.1](https://doi.org/10.5281/zenodo.11451849)) projects, has been revised to reflect the project's status at the time of this deliverable. To improve accessibility, facilitate management, and track updates and changes, the provisional DMP has been updated and migrated to GitHub for ongoing revisions. One of the aims of deliverable D3.3 was to make the DMP machine-actionable, in alignment with the Research Data Alliance (RDA) DMP Common Standard for machine-actionable Data Management Plans [http://doi.org/10.15497/rda00039](http://doi.org/10.15497/rda00039). The test implementation of the maDMP for the DiSSCo infrastructure has been developed on the [PlutoF](https://plutof.ut.ee) platform.
+The current Data Management Plan (DMP) for the DiSSCo infrastructure has been prepared as part of deliverable D3.3 of the DiSCCo Transition project. The DiSSCo DMP, initially published during the ICEDIG project ([D6.6](https://doi.org/10.5281/zenodo.3532937)) and later supplemented by the DiSSCo Prepare (D6.4) and DiSSCo Transition ([D5.1](https://doi.org/10.5281/zenodo.11451849)) projects, has been revised to reflect the project's status at the time of this deliverable. To improve accessibility, facilitate management, and track updates and changes, the provisional DMP has been updated and migrated to GitHub for ongoing revisions. One of the aims of deliverable D3.3 was to make the DMP machine-actionable, in alignment with the Research Data Alliance (RDA) DMP Common Standard for machine-actionable Data Management Plans ([http://doi.org/10.15497/rda00039](http://doi.org/10.15497/rda00039)). The test implementation of the maDMP for the DiSSCo infrastructure has been developed on the [PlutoF](https://plutof.ut.ee) platform.
 
 ### Acknowledgements
 The following individuals are gratefully acknowledged for their contributions to the present document:
@@ -64,6 +70,7 @@ The DiSSCo data management principles can be summarized as the following:
 **DMpr 9:** DiSSCo digital objects must be serialized as JSON [ECMA-404], as specified in section 4 and appendix A of the Digital Object Interface Protocol specification (DOIP) [DOIP 2.0 2018]. (ref)
 
 **DMpr 10:** Information about Digital Specimens and Digital Collections must be published and managed as part of the European Collection Objects Index. (ref)
+<!-- is the European Collection Objects Index (ECOI) an existing or planned repository? -->
 
 **DMpr 11:** Each Digital Specimen or other digital object instance handled by the DiSSCo infrastructure must be unambiguously, universally and persistently identified by a Natural Science Identifier (NSId), which shall be assigned when the object is first created. (ref)
 
@@ -84,11 +91,104 @@ With approximately 1.5 billion objects to be digitised, bringing natural science
 
 This document, the DiSSCo Data Management Plan (DiSSCo DMP), is a living document reflecting the active data management planning and stewardship philosophy adopted by DiSSCo. It focuses on maximising data openness and reusability, enduring data longevity and preservation, and promoting reproducible science. To address the changing needs, capabilities, and capacities of the evolving scientific community, this DMP will be revised as necessary to reflect current DiSSCo data management policies, associated decisions, and procedural changes.
 
+## Digital Object Architecture as the basis
+DiSSCo data management principles axpressed in the present DMP aim to be technology agnostic to the greatest extent possible, expecting that over the DiSSCo lifetime specific data management and processing technologies can evolve and will be replaced. A framework for data management must accommodate this and one such framework is Digital Object Architecture (DOA; Kahn 2006, Wittenburg 2019a). DiSSCo adopts DOA as its foundation because of this future-proof flexibility and because DOA has been shown to offer adherence to the FAIR principles as an integral characteristic, providing mechanisms inherently that directly address the specific principles to be followed (Lannom 2020, Wittenburg 2019b).
+
+DOA is technology neutral, meaning there is considerable flexibility to decide how to implement data management and to change that over time. The core concept in DOA is 'digital objects' as the fundamental entities to be identified and manipulated by systems. Digital objects are open, editable, interactive items collecting all the core information about the thing they represent in one place (Kallinikos 2010). In DiSSCo, these digital objects are principally Digital Specimens and Digital Collections.
+
+Persistent identifiers (PID) are the mechanism for identifying digital entities (including digital objects, datasets, workflows, software programs, journal articles, and more) involved in and produced by modern-day research. In the world of open data and open science this ability to uniquely and unambiguously identify such entities is essential to citation in scholary outputs to support claims made and to aid reproducibility. The abilities to create meaningful links between entities based on PIDs and to record provenance back to the data producers increases the value of those entities to research and gives credit to those producing them. PIDs are an integral element of DOA that contribute towards the DiSSCo characteristic of 'FAIRness', an essential characteristic of the infrastructure that is protected throughout the DiSSCo lifetime. PIDs play a prominent role in the DiSSCo infrastructure, being used to identify everything from Digital
+Specimens and Digital Collections, through the transactions (such as loans and visits, annotations and interpretations) associated with those specimens and collections, to the people and organisations involved. As far as possible, DiSSCo follows best practices in relation to identification and citation using PIDs as set out, for example by the environmental sciences research community in Europe (ENVRI 2017).
+
 ## Lifecycle of DiSSCo Data
+DiSSCo handles various types of data, some of which are generated by the DiSSCo infrastructure, whyle others are reused - provided by the DiSSCo Facilities, stored, and published within the DiSSCo infrastucture. A significant portion of the data managed by DiSSCo consists of Digital Specimen data - produced by the DiSSCo Facilities through the operation of digitasition lines or factories, which can be carried out either in-house or externally. Data produced through digitisation follows a lifecycle (Figure 1):
+
+RESEARCH DATA
+1. Data Acquisition - Data is generated through digitisation and other activities.
+2. Data Curation - Data is curated by adding metadata and storing it.
+3. Data Publishing - Data is published to make it accessible to the research community.
+4. Data Processing - Services are provided for transforming, collating, and analysing of data.
+5. Data Use - Researchers use the data, potentially producing new research data.
+
+**Figure 1.** Simplified lifecycle of DiSSCo data, focusing on Digital Specimen data
+
+All activities, data management principles, applications, services and software tools of the DiSSCo infrastructure are designed and implemented to support this DiSSCo data lifecycle.
+
+> [!NOTE]
+> More detailed information about the lifecycle of DiSSCo data can be found in Hardisty (2019) ([D6.6](https://doi.org/10.5281/zenodo.3532937)).
+
+### Data acquisition
+Data acquisition is concerned with the principal activity of digitising physical specimens by dedicated digitisation lines/factories. This involves prioritising the specimens and collections to be digitised; retrieving, transporting and preparing specimens or containers from collection storage to be processed for digitisation, cleaning specimens to be digitised, and returning to storage afterwards; and operating digitisation equipment to digitise specimens (capture information, transcription, imaging). These operations are carried out by the DiSSCo Facilities.
+
+### Data curation
+Data curation is concerned with curating digital specimen and collection data. This involves caring for and improving the data resulting from digitisation processes in the data acquisition phase e.g., checking, cleaning and improving data i.e., quality control, assigning (persistent) identifiers, depositing in databases/image stores, etc. Data produced by digitisation is normally curated in the Collection Management Systems (CMS) of DiSSCo Facilities.
+
+### Data publishing
+Data publishing is concerned with making curated data accessible to DiSSCo users and publicly to parties external to the DiSSCo infrastructure (e.g. GBIF), as well as directly to other services within DiSSCo. The work is carried out by data publishers following data publishing procedure that leads to data becoming publicly available in a database and/or a scholary data paper. Data publishing is based on the DiSSCo open access polify (ref) and must adhere to relevant quality control criteria, including relevant minimum information standards (e.g., [MIDS](https://www.tdwg.org/community/cd/mids/)) for the type of data being published. Specimen data must be published as Digital Specimen objects in DiSSCo's Digital Specimen Repository (ref) by DiSSCo Facilities.
+
+### Data processing
+Data can be further processed after it has been curated and published, which falls under the data processing phase. DiSSCo provides a range of services (expected to grow over time) for transforming data from one form to another (e.g., serving data in various useful representation formats such as JSON, RDF, CSV, etc.), for collating and aggregating data (e.g., to produce data summaries), and for analysing data in different ways. The results of data processing can include new data (such as annotations by external users), which must be curated within the infrastructure and subsequently published.
+
+### Data use
+In the final lifecycle phase, data use, the broader research community can exploit the digital and physical collections for science and can design digital experiments and analyses acting on the published and processed data. These experiments produce results (new data) that in turn can be acquired by DiSSCo for further curation, publishing and processing, thus restarting the lifecycle.
+
+Much of the data managed by DiSSCo requires interpretation and validation. Information can change as new knowledge becomes available. This presents challenges for research reproducibility from the perspective of tracking workflow and data integrity.
 
 ## Protected characteristics
+There are nine characteristics (Cn) of DiSSCo data management that are essential to protect throughout and ultimately beyond the lifetime of the DiSSCo data infrastructure. This lifetime is expected to be 25 – 30 years. These characteristics are essential for engendering community trust in the value, veracity and reliability of the data to be managed.
+
+This means that proposals for design decisions and changes, technical, procedural and organisational) must be assessed for their effect on the protected characteristics. Ideally, all design decisions and changes must not destroy or lessen any of the protected characteristics and should aim to enhance one or more of the characteristics.
+
+### Centrality of the digital specimen (C1)
+The digital surrogate of the physical specimen, as represented by a Digital Specimen (DS) object type is the central asset of interest in the DiSSCo infrastructure and is the design unit/concept that all other design decisions must respect.
+
+### Accuracy and authenticity of the digital specimen (C2)
+The digital specimen, as represented by a Digital Specimen object type is the best available digital representation (surrogate) for a physical specimen in a natural science collection. The possibility of data reuse implies that digital specimen data can be adapted, remixed, transformed, and built upon for different purposes. It might not be obvious when this happens, so it is important that the accuracy, authenticity and meaning of the digital specimen data is clear and preserved throughout its lifetime.
+
+### FAIRness (C3)
+FAIRness is a characteristic exhibited by an infrastructure (component) and the data it manages when that infrastructure maintains compliance with the principles of FAIR (Findable, Accessible, Interoperable, and Reusable). This characteristic must be protected throughout the DiSSCo lifetime. The principles of the present DMP are oriented around maintaining FAIRness and this is substantially aided byadoption of Digital Object Architecture and treatment of DiSSCo data as digital objects.
+
+### Protection of data (C4)
+Data held and managed by DiSSCo must be protected in accordance with legal regulations and community norms for the kind of data concerned. For example, data considered to be sensitive by the community, such as that revealing the geographical location of endangered species must be protected from unauthorised access. Data revealing personal details of individuals such as researchers and collectors must be protected in accordance with the EU’s General Data Protection Regulation 2016/679.
+
+### Preserving readability and retrievability (C5)
+Maintaining the ability to retrieve categorical reference images from 'deep archive' and preserving the readability of the image and other file formats over long periods of time is essential. This means maintaining the ability to read and use:
+a) Lossless, archived TIFF files and the related JPEG files used for data sharing and data processing;
+b) Files in other specific formats, even after those formats become obsolete.
+It means (potentially) systematically replacing image files in image archives/repositories with newer files using up-to-date file formats.
+
+### Traceability (provenance) of specimens (C6)
+Traceability (provenance) of specimens, their digitisation and change history, annotation and usage must be maintained consistently through the entire lifetime of the DiSSCo infrastructure. Storing and managing provenance information is a shared responsibility of the DiSSCo Facilities and DiSSCo Hub. Provenance shall be based on the W3C PROV framework (W3C PROV 2013), with provenance stored as part of the digital specimen itself. The DiSSCo Trace subsystem is how this is achieved, requiring the adoption of a standard provenance framework (W3C PROV) and recording library wherever provenance must be recorded.
+
+### Annotation history (C7)
+Annotations and interpretations attached to specimens and collections are an important part of the scientific and historical record (provability) and must not be lost or altered.
+
+### Determinablity (status and trends) of digitisation (C8)
+Information (statistics) about the volume and scope (description) of natural history collections and their state of digitisation is needed, both to show progress and to assist with prioritisation of digitisation activities. This information must be maintained consistently to ensure a common basis for comparison is maintained over time. The Collections Digitisation Dashboard (CDD; [https://www.dissco.eu/services/#cdd](https://www.dissco.eu/services/#cdd)) is the subsystem by which this is achieved.
+
+### Securability (C9)
+Securability (authentication, authorization, accounting, auditing) of multiple levels of access for users according to their authority and permissions, including access to retrieve and/or modify sensitive information must be maintained over the DiSSCo lifetime; considering that potential users from come from many communities, not only the European research and education community.
 
 ## DiSSCo data summary
+The list of datasets and services managed by DiSSCo (Table 1) includes, for example, Digital Specimen data stored in the Digital Specimen Repository, third-party annotations generated in the Unified Curation & Annotation System (DiSSCover), transaction data recorded in the European Loans & Visits System (ELViS), links to Digital Media, infrastructure and operational data, website data, training materials, and more.
+
+**Table 1.** List of datasets and services managed by DiSSCo (partially adapted from DiSSCo Transition D5.1, Table 1).
+| Title | Type | Formats | Reference |
+| --- | --- | --- | --- |
+| DiSSCover (Unified Curation & Annotation System) | Service or Interactive resource |  |  |
+| ELViS | Service or Interactive resource |  |  |
+| Collection Digitisation Dashboard | Service or Interactive resource |  |  |
+| Digital Specimen Repository |  Service or Interactive resource |  |  |
+| Knowledgebase | Service or Interactive resource |  |  |
+| Digital Specimen data | Dataset/Compiled data |  |  |
+| Links to Digital Media | Dataset/Compiled data |  |  |
+| Annotations | Dataset/Compiled data |  |  |
+| Method and protocol descriptions | Text/Research protocol |  |  |
+| Infrastructure and operational data (logs, error reports) | Text/Log or Text/Error report |  |  |
+| Transactions | Dataset/Compiled data |  |  |
+| Website data | Interactive resource/Website |  |  |
+| Literature (scientific papers, posters) | Text/Journal article or Text/Conference poster or Text/Conference paper or Text/Report |  |  |
+| Dissemination and communication materials | Text/Blog post |  |  |
+| Training materials | Learning object |  |  |
 
 ## FAIR
 
@@ -121,3 +221,13 @@ This document, the DiSSCo Data Management Plan (DiSSCo DMP), is a living documen
 ## Machine-actionable DMP for DiSSCo Infrastructure
 
 ## Glossary of terms and abbreviations
+
+## References
+
+ENVRI 2017
+Kahn 2006
+Kallinikos 2010
+Lannom 2020
+Wittenburg 2019a
+Wittenburg 2019b
+W3C PROV 2013
