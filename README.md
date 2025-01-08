@@ -169,26 +169,61 @@ Information (statistics) about the volume and scope (description) of natural his
 Securability (authentication, authorization, accounting, auditing) of multiple levels of access for users according to their authority and permissions, including access to retrieve and/or modify sensitive information must be maintained over the DiSSCo lifetime; considering that potential users from come from many communities, not only the European research and education community.
 
 ## DiSSCo data summary
-The list of datasets and services managed by DiSSCo (Table 1) includes, for example, Digital Specimen data stored in the Digital Specimen Repository, third-party annotations generated in the Unified Curation & Annotation System (DiSSCover), transaction data recorded in the European Loans & Visits System (ELViS), links to Digital Media, infrastructure and operational data, website data, training materials, and more.
+The scientific vision and mission of DiSSCo includes mobilising and harmonising natural science collection data as a single European digital virtual collection available in human and machine-readable forms via the Internet. At the same time, it includes connecting that historical collection data with data emerging from new techniques including imaging, tissue banking, DNA barcoding, whole genome sequencing, and legacy literature digitisation.
 
-**Table 1.** List of datasets and services managed by DiSSCo (partially adapted from DiSSCo Transition D5.1, Table 1).
-| Title | Type | Formats | Reference |
-| --- | --- | --- | --- |
-| DiSSCover (Unified Curation & Annotation System) | Service or Interactive resource |  |  |
-| ELViS | Service or Interactive resource |  |  |
-| Collection Digitisation Dashboard | Service or Interactive resource |  |  |
-| Digital Specimen Repository |  Service or Interactive resource |  |  |
-| Knowledgebase | Service or Interactive resource |  |  |
-| Digital Specimen data | Dataset/Compiled data |  |  |
-| Links to Digital Media | Dataset/Compiled data |  |  |
-| Annotations | Dataset/Compiled data |  |  |
-| Method and protocol descriptions | Text/Research protocol |  |  |
-| Infrastructure and operational data (logs, error reports) | Text/Log or Text/Error report |  |  |
-| Transactions | Dataset/Compiled data |  |  |
-| Website data | Interactive resource/Website |  |  |
-| Literature (scientific papers, posters) | Text/Journal article or Text/Conference poster or Text/Conference paper or Text/Report |  |  |
-| Dissemination and communication materials | Text/Blog post |  |  |
-| Training materials | Learning object |  |  |
+At the heart of DiSSCo are 'Digital Collections' and 'Digital Specimens', acting as digital representations in computer systems for collections and specimens in the real world. These digital representations are specialisations by DiSSCo of the more general-purpose notion of 'digital objects'.
+
+The scope of DiSSCo includes all kinds of natural science collections, including fossils, rocks and minerals, anthropological artefacts, preserved biological specimens (plants, seeds, animals, insects, etc.) and living biological collections. Digital Specimens are at the heart of an interconnected graph of diverse and dispersed data classes, equipping them for many research and teaching purposes that might not otherwise be possible.
+
+### Types of data generated/acquired
+DiSSCo accrues and manages data comprising digital collections and digital specimens at progressively more comprehensive levels of digitisation, as well as other types of data relating to its subsystems for managing and administering the scientific use of collections and specimens (Table 1). This DMP primarily focuses on the principal data types - digital collections and digital specimens - but the principles it outlines are applicable to all types of data handled by DiSSCo. In the context of digital specimens and collections, DiSSCo data management distinguishes several categories of data to be managed:
+1. **Specimen and collection data**: This refers to data about physical specimens and collections. A key characteristic of this data is its authoritative nature - it is determined by approved and authorised experts, such as scientists and curators.
+2. **Annotations**: These are assertions that replicate the traditional written annotation of physical objects, such as species determination or comments relating to label information. Annotations become Interpretations when they are processed and accepted by an authorised curator or other approved expert.
+3. **Interpretations**: These involve the application of expertise to refine and clarify the meaning of poorly defined or ambiguous text describing specimens, based on available facts and expert judgement.
+4. **Supplementary data (including third-party data)**: This encompasses additional data about a specimen that goes beyond the aforementioned categories and contributes to better understanding and increased knowledge of the specimen. Supplementary data can be generated by specimen owners or by third-parties and can include biodiversity literature references, DNA sequence data, trait data, acoustic recordings, or other relevant information related to specific specimens and collections. Such data may reside outside the DiSSCo infrastructure but can be referenced from DiSSCo.
+5. **Provenance data**: This category provides a traceable record of the origins of the data and the processing actions applied to it.
+
+**Table 1.** List of datasets and services managed by DiSSCo (partially adapted from DiSSCo Transition D5.1, Table 1 and [D6.6](https://doi.org/10.5281/zenodo.3532937), DiSSCo data summary).
+| Title | Type | Formats | Standards | Reference |
+| --- | --- | --- | --- | --- |
+| DiSSCover (Unified Curation & Annotation System) | Service or Interactive resource |  |  |  |
+| ELViS (European Loans and Visits System) | Service or Interactive resource |  |  |  |
+| CDD (Collection Digitisation Dashboard) | Service or Interactive resource |  |  |  |
+| Digital Specimen Repository |  Service or Interactive resource |  |  |  |
+| Knowledgebase | Service or Interactive resource |  |  |  |
+| **Digital Collection data** | Dataset/Compiled data |  |  |  |
+| **Digital Specimen data** | Dataset/Compiled data |  |  |  |
+| Links to Digital Media (and other extended data) | Dataset/Compiled data |  |  |  |
+| Annotations | Dataset/Compiled data |  |  |  |
+| Provenance data | Dataset/Compiled data |  | W3C PROV Data Model |  |
+| Method and protocol descriptions | Text/Research protocol |  |  |  |
+| Infrastructure and operational data (logs, error reports) | Text/Log or Text/Error report |  |  |  |
+| User authentication and authorization records | Text |  |  |  |
+| DiSSCo agreed vocabularies and ontologies | Text |  |  |  |
+| Technical documentation on standards developed by DiSSCo | Text |  |  |  |
+| Transactions (loans, visits, access requests, queries) | Dataset/Compiled data |  |  |  |
+| Website data | Interactive resource/Website |  |  |  |
+| Literature (scientific papers, posters) | Text/Journal article or Text/Conference poster or Text/Conference paper or Text/Report |  |  |  |
+| Dissemination and communication materials | Text/Blog post |  |  |  |
+| Training materials | Learning object |  |  |  |
+
+### Re-use of existing data
+Digital Specimen data incorporated into DiSSCo's Digital Specimen Repository originates from the collection management systems used by DiSSCo Facilities. Therefore, it can be reffered to as existing data that is re-used by DiSSCo. There is also a wide range of pre-existing data, such as biodiversity literature, genetic sequence and other molecular information, traits data, habitats data, alien and invasive species data, data about species conservation, etc. that can be linked with specimens in collection. DiSSCo makes it possible to build links between such data and Digital Specimens. 
+
+### Expected size of the data
+With approximately 1.5 billion physical specimens in Europe to be digitised, bringing natural science collections to the information age is expected to result in petabytes of new data over the next decades. However, the number of links between digital specimens and other related information could greatly exceed the number of objects themselves, perhaps by 3 – 5 times. This growth will continue as digital specimens become increasingly interconnected with other pieces of information related to the specimens. Additional sources of data expected to grow over the years include annotations data entered into the Unified Curation & Annotation System and provenance data linked to both Digital Specimen and Annotation records.
+
+### Data utility
+There is a wide range of traditional and new user groups for DiSSCo data. Conventionally, this community includes all researchers engaged in discovering, describing and interpreting life on Earth, both past and present, as well as researchers studying the geological history of the planet.
+
+European collections hold circa 80% of the 2 million species presently described and are at the forefront of efforts to describe what is estimated to be approximately 6 million new species that await discovery (Mora 2011). DiSSCo collections also include extensive palaeontological and mineralogical collections, including concentrations of rock and ore samples, making them a valuable resource for the field of economic geology as well as for research focused on climate change and the origin of our solar system.
+
+The unprecedented taxonomic, geographic, stratigraphic and historical coverage gathered within these collections, coupled with their increasing digital accessibility, is opening them up to entirely new user communities, and increasingly to the private sector/industry. These users are increasingly drawn to the time series and patterns represented within these collections, to make predictions about the sustainable exploitation of bio- and geo-diversity that inform practice and policy decisions. Table 2 provides some examples of typical DiSSCo data usages beyond academic/scholarship uses.
+
+**Table 2.** Typical purposes for DiSSCo data usage.
+| Environment | Agriculture | Health | Border control | Biobanking |
+| --- | --- | --- | --- | --- |
+| - Urban planning<br />- Environmental impact assessment<br />- Deep-sea mining<br />- Conservation planning & monitoring | - Species identification<br />- Future domestication<br />- Land use change |  |  |  |
 
 ## FAIR
 
@@ -224,10 +259,11 @@ The list of datasets and services managed by DiSSCo (Table 1) includes, for exam
 
 ## References
 
-ENVRI 2017
-Kahn 2006
-Kallinikos 2010
-Lannom 2020
-Wittenburg 2019a
-Wittenburg 2019b
-W3C PROV 2013
+- ENVRI 2017
+- Kahn 2006
+- Kallinikos 2010
+- Lannom 2020
+- Mora 2011
+- Wittenburg 2019a
+- Wittenburg 2019b
+- W3C PROV 2013
