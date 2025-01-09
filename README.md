@@ -111,6 +111,7 @@ RESEARCH DATA
 5. Data Use - Researchers use the data, potentially producing new research data.
 -->
 ![alt text](https://github.com/TU-NHM/DiSSCo_DMP/images/Figure1.png "Figure 1")
+
 **Figure 1.** Simplified lifecycle of DiSSCo data, focusing on Digital Specimen data
 
 All activities, data management principles, applications, services and software tools of the DiSSCo infrastructure are designed and implemented to support this DiSSCo data lifecycle.
