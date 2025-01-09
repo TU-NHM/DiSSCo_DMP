@@ -225,7 +225,7 @@ The unprecedented taxonomic, geographic, stratigraphic and historical coverage g
 | Environment | Agriculture | Health | Border control | Biobanking |
 | --- | --- | --- | --- | --- |
 | - Urban planning<br />- Environmental impact assessment<br />- Deep-sea mining<br />- Conservation planning & monitoring<br />- Prospecting<br />- Shifts in species geographic distributions and abundances<br />- Biomes, ecosystems and environmental sigrantures and trends<br />- Tectonics | - Species identification<br />- Future domestication<br />- Land use change<br />Industrial (insect) farming<br />- Forestry<br />- Agri-chemicals<br />- Emergence of new pests and diseases<br />- Climate change, agricultural effects | - Pathogen identification<br />- Medicine and food supplement verification<br />- Pharmaceutical industry<br />- Biotechnology | - Invasive species and pests<br />- CITES protected specis enforcement<br />- Countering illegal wildlife trade identification<br />- Shifts in species geographic distributions | Preserve genetic material (tissues & seeds) for:<br />- Research<br />- Government<br />- Industry (medicine, bitech. & agriculture) |
-| Education, virtual exhibitions, documentaries, citizen science, historians & artists. ||
+| Education, virtual exhibitions, documentaries, citizen science, historians & artists. ||  |  |  | 
 
 DiSSCo data is expected to be used on average by 5,000 – 15,000 unique users each day.
 
