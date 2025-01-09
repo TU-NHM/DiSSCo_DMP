@@ -110,7 +110,7 @@ RESEARCH DATA
 4. Data Processing - Services are provided for transforming, collating, and analysing of data.
 5. Data Use - Researchers use the data, potentially producing new research data.
 -->
-![alt text](https://github.com/TU-NHM/DiSSCo_DMP/images/Figure1.png "Figure 1")
+![alt text](https://github.com/TU-NHM/DiSSCo_DMP/blob/main/images/Figure1.png "Figure 1")
 
 **Figure 1.** Simplified lifecycle of DiSSCo data, focusing on Digital Specimen data
 
