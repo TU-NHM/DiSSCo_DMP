@@ -30,11 +30,11 @@ Data Management Plan for DiSSCo infrastructure.
 15. [Glossary of terms and abbreviations](#glossary-of-terms-and-abbreviations)
 
 ## List of Tables
-[Table 1.](#table-1) List of datasets and services managed by DiSSCo (partially adapted from DiSSCo Transition D5.1, Table 1 and [D6.6](https://doi.org/10.5281/zenodo.3532937), DiSSCo data summary).
+- [Table 1.](#table-1) List of datasets and services managed by DiSSCo (partially adapted from DiSSCo Transition D5.1, Table 1 and [D6.6](https://doi.org/10.5281/zenodo.3532937), DiSSCo data summary).
 
 ## List of Figures
-[Figure 1.](#figure-1) A generic diagram to show how FDO fits into the architecture.
-[Figure 2.](#figure-2) Simplified lifecycle of DiSSCo data, focusing on Digital Specimen data.
+- [Figure 1.](#figure-1) A generic diagram to show how FDO fits into the architecture.
+- [Figure 2.](#figure-2) Simplified lifecycle of DiSSCo data, focusing on Digital Specimen data.
 
 ## Preface
 
