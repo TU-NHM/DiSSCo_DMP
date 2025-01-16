@@ -5,6 +5,7 @@ Data Management Plan for DiSSCo infrastructure.
 | Date and version no. | Author | Comments/Changes |
 | --- | --- | --- |
 | 03.01.2025, v0.1 | Kessy Abarenkov | Adding basic structure and initial content |
+| 16.01.2025, v0.2 | Kessy Abarenkov | Adding additional text to various sections and intruducing a new section about the maDMP |
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -32,6 +33,8 @@ Data Management Plan for DiSSCo infrastructure.
 ## List of Tables
 - [Table 1.](#table-1) List of datasets managed by DiSSCo (partially adapted from DiSSCo Transition D5.1, Table 1 and [D6.6](https://doi.org/10.5281/zenodo.3532937), DiSSCo data summary).
 - [Table 2.](#table-2) List of services managed by DiSSCo (partially adapted from DiSSCo Transition D5.1, Table 1 and [D6.6](https://doi.org/10.5281/zenodo.3532937), DiSSCo data summary).
+- [Table 3.](#table-3) Typical purposes for DiSSCo data usage.
+- [Table 4.](#table-4) Example datasets for the maDMP of the DiSSCo infrastructure.
 
 ## List of Figures
 - [Figure 1.](#figure-1) A generic diagram to show how FDO fits into the architecture.
@@ -221,9 +224,9 @@ There is a wide range of traditional and new user groups for DiSSCo data. Conven
 
 European collections hold circa 80% of the 2 million species presently described and are at the forefront of efforts to describe what is estimated to be approximately 6 million new species that await discovery ([Mora 2011](#mora-2011)). DiSSCo collections also include extensive palaeontological and mineralogical collections, including concentrations of rock and ore samples, making them a valuable resource for the field of economic geology as well as for research focused on climate change and the origin of our solar system.
 
-The unprecedented taxonomic, geographic, stratigraphic and historical coverage gathered within these collections, coupled with their increasing digital accessibility, is opening them up to entirely new user communities, and increasingly to the private sector/industry. These users are increasingly drawn to the time series and patterns represented within these collections, to make predictions about the sustainable exploitation of bio- and geo-diversity that inform practice and policy decisions. Table 2 provides some examples of typical DiSSCo data usages beyond academic/scholarship uses. These also include education, virtual exhibitions, documentaries, citizen science, historians & artists.
+The unprecedented taxonomic, geographic, stratigraphic and historical coverage gathered within these collections, coupled with their increasing digital accessibility, is opening them up to entirely new user communities, and increasingly to the private sector/industry. These users are increasingly drawn to the time series and patterns represented within these collections, to make predictions about the sustainable exploitation of bio- and geo-diversity that inform practice and policy decisions. Table 3 provides some examples of typical DiSSCo data usages beyond academic/scholarship uses. These also include education, virtual exhibitions, documentaries, citizen science, historians & artists.
 
-**Table 2.** Typical purposes for DiSSCo data usage.
+<a name="table-3"></a>**Table 3.** Typical purposes for DiSSCo data usage.
 | Environment | Agriculture | Health | Border control | Biobanking |
 | --- | --- | --- | --- | --- |
 | - Urban planning<br />- Environmental impact assessment<br />- Deep-sea mining<br />- Conservation planning & monitoring<br />- Prospecting<br />- Shifts in species geographic distributions and abundances<br />- Biomes, ecosystems and environmental signatures and trends<br />- Tectonics | - Species identification<br />- Future domestication<br />- Land use change<br />Industrial (insect) farming<br />- Forestry<br />- Agri-chemicals<br />- Emergence of new pests and diseases<br />- Climate change, agricultural effects | - Pathogen identification<br />- Medicine and food supplement verification<br />- Pharmaceutical industry<br />- Biotechnology | - Invasive species and pests<br />- CITES protected species enforcement<br />- Countering illegal wildlife trade identification<br />- Shifts in species geographic distributions | Preserve genetic material (tissues & seeds) for:<br />- Research<br />- Government<br />- Industry (medicine, biotech. & agriculture) |
@@ -275,12 +278,32 @@ To ensure the long-term sustainability and maintainability of the software devel
 4. ...
 
 ## Machine-actionable DMP for DiSSCo Infrastructure
+One of the aims of the D3.3 of the DiSSCo Transition project was to make the DMP of the DiSSCo infrastructure machine-actionable in accordance with the RDA DMP Common Standard for machine-actionable Data Management Plans ([Miksa et al., 2020](#miksa-et-al-2020)). While traditional Data Management Plans are often free-form text documents describing the data used and produced during a research project — such as where the data can be accessed, how it is archived, which licences apply, and to whom credit should be given — machine-actionable DMPs, adhering to the common standard and application profile, enable the automatic exchange, integration, and validation of information contained within DMPs. Thus, it facilitates the exchange of information between systems acting on behalf of stakeholders involved in the research life cycle, such as researchers, funders, repository managers, and others.
+
+The Plan-Track-Assess framework ([Reichmann et al., 2024](#reichmann-et-al-2024)), proposed by the [OSTrails project](https://ostrails.eu/) provides a high-level, tool-independent framework that outlines how researchers, research managers, and funders plan, track, and assess the management of Digital Objects (DO) in their DMP in alignment with the FAIR principles. The "Plan" component of the framework, along with its proposed pathway, outlines how researchers develop DMPs, retrieve metadata, and assess these plans to improve their adherence to FAIR principles.
+Reichmann et al. identified user actions that occur while creating DMPs via a DMP platform. These actions can trigger interactions with other components, such as searching and retrieving metadata for research outputs and digital objects via repositories or Scientific Knowledge Graphs (SKGs), adding a DMP to a repository, and evaluating the completeness and FAIRness of a DMP and/or the research output listed within it.
+
+As part of the D3.3 of the DiSSCo Transition project, the provisional DiSSCo DMP was aligned with the framework proposed by the [OSTrails project](https://ostrails.eu/) by making parts of the traditional DiSSCo DMP machine-actionable in accordance with the RDA DMP Common Standard.
+
+The RDA Common Standard for machine-actionable DMPs accepts dataset and resource types based on the [DataCite metadata schema](https://schema.datacite.org/meta/kernel-4.1/doc/DataCite-MetadataKernel_v4.1.pdf ). These include Collection, Dataset, Model, Service, Software, and Workflow, and others. The types of data managed by DiSSCo will be gathered from various sources, including publicly available datasets, institutional or private data, and self-generated data. In the test implementation of DiSSCo's machine-actionable DMP, we included: 
+1. Data shared or generated through the DiSSCo infrastructure, and 
+2. Services developed under or provided by the DiSSCo infrastructure.
+Test implementation of the DiSSCo maDMP is available on [PlutoF platform](https://app.plutof.ut.ee/dmp/view/24). A few examples are listed in Table 4.
+
+<a name="table-4"></a>**Table 4.** Example datasets for the maDMP of the DiSSCo infrastructure.
+| Dataset or service | Type | Dataset description in JSON |
+| --- | --- | --- |
+| DiSSCover (Unified Curation & Annotation System) | Service or Interactive resource | [JSON](https://example.com) |
+| ELViS (European Loans and Visits System) | Service or Interactive resource | [JSON](https://example.com) |
+| Provisional Data Management Plan for DiSSCo infrastructure. Deliverable D6.6 | ScholarlyArticle | [JSON](https://example.com) |
 
 ## Glossary of terms and abbreviations
 | Abbreviation | Definition |
 | --- | --- |
 | **CMS** | Collection Management System |
+| **DiSSCo** | Distributed System of Scientific Collections |
 | **DMP** | Data Management Plan |
+| **DO** | Digital Object |
 | **DOA** | Digital Object Architecture |
 | **FAIR** | Findable, Accessible, Interoperable, Reusable |
 | **FDO** | FAIR Digital Object |
@@ -291,6 +314,7 @@ To ensure the long-term sustainability and maintainability of the software devel
 | **PID** | Persistent Identifier |
 | **RDA** | Research Data Alliance |
 | **RI** | Research Infrastructure |
+| **SKG** | Scientific Knowledge Graph |
 
 ## References
 - <a name="deeleman-reinhold-et-al-2024"></a>Deeleman-Reinhold CL, Addink W, Miller JA (2024) The genera Chrysilla and Phintelloides revisited with the description of a new species (Araneae, Salticidae) using digital specimen DOIs and nanopublications. Biodiversity Data Journal 12: e129438. https://doi.org/10.3897/BDJ.12.e129438
@@ -300,6 +324,7 @@ To ensure the long-term sustainability and maintainability of the software devel
 - <a name="kahn-2006"></a>Kahn, R. and Wilensky, R., 2006. A framework for distributed digital object services. International Journal on Digital Libraries, 6(2), pp.115-123. https://doi.org/10.1007/s00799-005-0128-x
 - <a name="miksa-et-al-2020"></a>Miksa, T., Walk, P., & Neish, P. (2020). RDA DMP Common Standard for Machine-actionable Data Management Plans. Zenodo. https://doi.org/10.15497/rda00039
 - <a name="mora-2011"></a>Mora, C., Tittensor, D.P., Adl, S., Simpson, A.G.B., Worm, B. 2011. How Many Species Are There on Earth and in the Ocean?. PLOS Biology 9(8): e1001127. https://doi.org/10.1371/journal.pbio.1001127
+- <a name="reichmann-et-al-2024"></a>Reichmann, S., Rey Mazón, M., Hasani-Mavriqi, I., Thaci, L., & Eckhard, D. (2024). D1.1: Plan-Track-Assess Pathways. Zenodo. https://doi.org/10.5281/zenodo.13145788
 - <a name="weiland-et-al-2022"></a>Weiland, C., Addink, W., Dillen, M., Fichtmueller, D., Grieb, J., Haston, E., Heikkinen, M., Islam, S., Leeflang, S., Piirainen, E., Pim Reis, J., Robertson, T. & Saeedi, H. (2022). DiSSCo Prepare Deliverable D6.4 - Implementation of the DiSSCo Data Management Plan (DMP) and ENVRI FAIR compliance of DiSSCo data services. DiSSCo Prepare. https://doi.org/10.34960/1jqv-1335
 - <a name="weiland-et-al-2024"></a>Weiland, C., Addink, W., Dillen, M., Fichtmueller, D., Haston, E., Grieb, J., Heikkinen, M., Islam, S., Leeflang, S., Piirainen, E., Reis, J. P., Robertson, T., & Saeedi, H. (2024). Implementation of the DiSSCo Data Management Plan (DMP) and ENVRI FAIR compliance of DiSSCo data services. Zenodo. https://doi.org/10.5281/zenodo.11451849
 - <a name="wittenburg-2019"></a>Wittenburg, P., Strawn, G., Mons, B., Boninho, L., Schultes, E. 2019. Digital Objects as Drivers towards Convergence in Data Infrastructures. doi: 10.23728/b2share.b605d85809ca45679b110719b6c6cb11
