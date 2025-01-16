@@ -5,6 +5,7 @@ Data Management Plan for DiSSCo infrastructure.
 | Date and version no. | Author | Comments/Changes |
 | --- | --- | --- |
 | 03.01.2025, v0.1 | Kessy Abarenkov | Adding basic structure and initial content |
+| 16.01.2025, v0.2 | Kessy Abarenkov | Adding additional text to various sections and intruducing a new section about the maDMP |
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -33,6 +34,7 @@ Data Management Plan for DiSSCo infrastructure.
 - [Table 1.](#table-1) List of datasets managed by DiSSCo (partially adapted from DiSSCo Transition D5.1, Table 1 and [D6.6](https://doi.org/10.5281/zenodo.3532937), DiSSCo data summary).
 - [Table 2.](#table-2) List of services managed by DiSSCo (partially adapted from DiSSCo Transition D5.1, Table 1 and [D6.6](https://doi.org/10.5281/zenodo.3532937), DiSSCo data summary).
 - [Table 3.](#table-3) Typical purposes for DiSSCo data usage.
+- [Table 4.](#table-4) Example datasets for the maDMP of the DiSSCo infrastructure.
 
 ## List of Figures
 - [Figure 1.](#figure-1) A generic diagram to show how FDO fits into the architecture.
@@ -288,7 +290,7 @@ The RDA Common Standard for machine-actionable DMPs accepts dataset and resource
 2. Services developed under or provided by the DiSSCo infrastructure.
 Test implementation of the DiSSCo maDMP is available on [PlutoF platform](https://app.plutof.ut.ee/dmp/view/24). A few examples are listed in Table 4.
 
-<a name="table-4"></a>**Table 4.** Typical purposes for DiSSCo data usage.
+<a name="table-4"></a>**Table 4.** Example datasets for the maDMP of the DiSSCo infrastructure.
 | Dataset or service | Type | Dataset description in JSON |
 | --- | --- | --- |
 | DiSSCover (Unified Curation & Annotation System) | Service or Interactive resource | [JSON](https://example.com) |
