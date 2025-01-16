@@ -239,6 +239,8 @@ DiSSCo aims to provide a DOI for every individual digital specimen in European n
 
 To date, DiSSCo has employed DOIs as identifiers for Digital Specimens ([Deeleman-Reinhold et al., 2024](#deeleman-reinhold-et-al-2024)), enabling both citation and persistent referencing of its resources.
 
+## Mutability, versioning and obsolescence
+
 ## Service management and service level agreements
 Data service management covers the entire spectrum of services provided by DiSSCo Hub to its community of users that includes researchers, collections staff, non-governmental organisations, students and citizens, as well as members of the Press/media. DiSSCo does not offer its services under formal Service Level Agreements (SLA) because to do so would admit that non-compliance with stated levels of service is open to enforcement by legal means and compensation, which is not appropriate when end-users are not paying for the services they use. DiSSCo prefers an approach based upon openness, transparency, standards and best practice whereby trust is earned through demonstrated availability and reliability of service.
 
