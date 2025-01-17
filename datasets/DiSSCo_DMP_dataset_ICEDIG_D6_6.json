@@ -1,0 +1,86 @@
+{
+    "dmp": {
+        "contact": {
+            "contact_id": {
+                "identifier": "0000-0001-5526-4845",
+                "type": "orcid"
+            },
+            "mbox": "kessy.abarenkov@ut.ee",
+            "name": "Kessy Abarenkov"
+        },
+        "contributor": [
+            {
+                "contributor_id": {
+                    "identifier": "0000-0001-5526-4845",
+                    "type": "orcid"
+                },
+                "mbox": "kessy.abarenkov@ut.ee",
+                "name": "Kessy Abarenkov",
+                "role": [
+                    "contributor"
+                ]
+            }
+        ],
+        "cost": [],
+        "created": "2024-12-17",
+        "dataset": [
+            {
+                "data_quality_assurance": [],
+                "dataset_id": {
+                    "identifier": "10.5281/zenodo.3532937",
+                    "type": "doi"
+                },
+                "description": "Excecutive summary DiSSCo, the \u201cDistributed System of Scientific Collections, is a pan\u2010European Research Infrastructure mobilising, unifying and delivering bio\u2010 and geo\u2010diversity digital information to scientific communities and beyond as a single digital virtual collection. With approximately 1.5 billion objects to be digitised, bringing natural science collections to the information age is expected to result in 100 petabytes of new data over the next two decades, used on average by 5,000 \u2013 15,000 unique users every day. <br> The DiSSCo Data Management Plan (DMP) is a living document reflecting the active data management planning and stewardship philosophy of DiSSCo, with focus on achieving maximum accessibility and reusability of data according to core principles of 'findable, accessible, interoperable and reusable' (FAIR), longevity of data and data preservation, community curation, linking to third\u2010party information and reproducible science. The DiSSCo DMP offers unified data management principles for data providers, data managers and users, and guidance to engineers and programmers on technical standards and best practices. It applies to data management activities (production and acquisition, curation, publishing, processing and use) of the geographically distributed collection\u2010holding organisations (the DiSSCo acilities) and to all DiSSCo Hub activities. <br> DiSSCo adopts Digital Object Architecture (DOA) as its foundation because of its future\u2010proof flexibility over long timescales in the face of technological change, and because DOA has been shown to offer adherence to the FAIR principles as an integral characteristic, providing mechanisms inherently that directly address the specific principles to be promoted. In DOA the core concept is the \u2018digital object\u2019. <br> Digitisation is the process of making data about physical objects digitally available, and the output of that process is Digital Specimens and Digital Collections. Digital Specimens and Digital Collections are specific types of \u2018digital objects\u2019, which are the fundamental entities to be the subject of data management in DiSSCo. <br> Each instance of a digital object collects and organizes all the core information about the physical things it represents. These identified objects are amenable to processing and to transport from one system to another, making DOA a powerful yet simple extension of the existing Internet. A link must be maintained by the Digital Specimen to the physical specimen it represents. This link is the identifier of the physical specimen. These Digital Specimen objects are the principal data that DiSSCo manages. Each Digital Specimen or other digital object instance handled by the DiSSCo infrastructure must be unambiguously, universally and persistently identified by an identifier (Natural Science Identifier, NSId) which shall be assigned when the object is first created. Each DiSSCo Facility shall be responsible for creating (minting) and managing their own NSIds in accordance with the DiSSCo policy for NSIds, and for registering their own Digital Specimens with the DiSSCo Hub infrastructure. Resolution of an NSId shall always return the current version of an object\u2019s content, as well as any interpretations and annotations associated with it. <br> The principle object types in DiSSCo (Digital Specimens, Digital Collections) are treated as mutable objects with access control and object history (provenance), meaning that they can be updated as new knowledge becomes available. Provenance data must be generated and preserved by all operations acting upon DiSSCo data objects. Timestamped records of change (provenance data) allow reconstruction of a specific \u2018version\u2019 of a digital object at a date and time in the past. <br> Information about Digital Specimens and Digital Collections must be published and managed as part of the European Collection Objects Index. DiSSCo Facilities are encouraged to publish the fullest available digital data about their individual specimens and collections at the earliest opportunity, aiming as best practice to achieve at least MIDS level 2 for Digital Specimens and MICS level 2 for Digital Collections information. <br> Several characteristics, such as centrality, accuracy and authenticity of the Digital Specimen, protection of data, preservation of readability, traceability/provenance, and annotation history are essential for developing long\u2010term community trust in DiSSCo. They are the protected characteristics of DiSSCo that must be protected throughout the DiSSCo lifetime. Thus, all design decisions (technical, procedural, organisational, etc.) must be assessed for their effect on the protected characteristics. Such decisions and changes must not destroy or lessen the protected characteristics.",
+                "distribution": [],
+                "issued": "2019-11-12",
+                "keyword": [
+                    "biodiversity",
+                    "icedig",
+                    "data management plan",
+                    "digital specimen",
+                    "DiSSCo",
+                    "FAIR",
+                    "data infrastructure",
+                    "data management"
+                ],
+                "language": "eng",
+                "metadata": [],
+                "personal_data": "unknown",
+                "security_and_privacy": [],
+                "sensitive_data": "unknown",
+                "technical_resource": [],
+                "title": "Provisional Data Management Plan for DiSSCo infrastructure. Deliverable D6.6",
+                "type": "ScholarlyArticle"
+            }
+        ],
+        "dmp_id": {
+            "identifier": "https://github.com/TU-NHM/DiSSCo_DMP",
+            "type": "url"
+        },
+        "ethical_issues_exist": "no",
+        "language": "eng",
+        "modified": "2025-01-17",
+        "project": [
+            {
+                "description": "The Distributed System of Scientific Collections is a state-of-the-art Research Infrastructure (RI) for natural science collections. Its aim is to digitally unify all European natural science assets into a single, integrated European collection, providing common access, standardised curation, and harmonised policies and practices across countries. Additionally, DiSSCo ensures that all data adheres to the FAIR principles (Findable, Accessible, Interoperable, and Reusable).",
+                "end": "2025-05-31",
+                "funding": [
+                    {
+                        "funder_id": {
+                            "identifier": "European Commission",
+                            "type": "other"
+                        },
+                        "funding_status": "granted",
+                        "grant_id": {
+                            "identifier": "101130121",
+                            "type": "other"
+                        }
+                    }
+                ],
+                "start": "2023-12-01",
+                "title": "DiSSCo Transition"
+            }
+        ],
+        "title": "DiSSCo machine-actionable DMP"
+    }
+}

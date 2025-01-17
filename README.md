@@ -29,6 +29,7 @@ Data Management Plan for DiSSCo infrastructure.
 13. [Software maintenance and sustainability](#software-maintenance-and-sustainability)
 14. [Machine-actionable DMP for DiSSCo Infrastructure](#machine-actionable-dmp-for-dissco-infrastructure)
 15. [Glossary of terms and abbreviations](#glossary-of-terms-and-abbreviations)
+16. [References](#references)
 
 ## List of Tables
 - [Table 1.](#table-1) List of datasets managed by DiSSCo (partially adapted from DiSSCo Transition D5.1, Table 1 and [D6.6](https://doi.org/10.5281/zenodo.3532937), DiSSCo data summary).
@@ -293,9 +294,9 @@ Test implementation of the DiSSCo maDMP is available on [PlutoF platform](https:
 <a name="table-4"></a>**Table 4.** Example datasets for the maDMP of the DiSSCo infrastructure.
 | Dataset or service | Type | Dataset description in JSON |
 | --- | --- | --- |
-| DiSSCover (Unified Curation & Annotation System) | Service or Interactive resource | [JSON](https://example.com) |
-| ELViS (European Loans and Visits System) | Service or Interactive resource | [JSON](https://example.com) |
-| Provisional Data Management Plan for DiSSCo infrastructure. Deliverable D6.6 | ScholarlyArticle | [JSON](https://example.com) |
+| DiSSCover (Unified Curation & Annotation System) | Service or Interactive resource | [JSON](https://github.com/TU-NHM/DiSSCo_DMP/blob/main/datasets/DiSSCo_DMP_dataset_DiSSCover.json) |
+| ELViS (European Loans and Visits System) | Service or Interactive resource | [JSON](https://github.com/TU-NHM/DiSSCo_DMP/blob/main/datasets/DiSSCo_DMP_dataset_ELViS.json) |
+| Provisional Data Management Plan for DiSSCo infrastructure. Deliverable D6.6 | ScholarlyArticle | [JSON](https://github.com/TU-NHM/DiSSCo_DMP/blob/main/datasets/DiSSCo_DMP_dataset_ICEDIG_D6_6.json) |
 
 ## Glossary of terms and abbreviations
 | Abbreviation | Definition |

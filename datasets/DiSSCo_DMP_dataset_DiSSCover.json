@@ -1,0 +1,89 @@
+{
+    "dmp": {
+        "contact": {
+            "contact_id": {
+                "identifier": "0000-0001-5526-4845",
+                "type": "orcid"
+            },
+            "mbox": "kessy.abarenkov@ut.ee",
+            "name": "Kessy Abarenkov"
+        },
+        "contributor": [
+            {
+                "contributor_id": {
+                    "identifier": "0000-0001-5526-4845",
+                    "type": "orcid"
+                },
+                "mbox": "kessy.abarenkov@ut.ee",
+                "name": "Kessy Abarenkov",
+                "role": [
+                    "contributor"
+                ]
+            }
+        ],
+        "cost": [],
+        "created": "2024-12-17",
+        "dataset": [
+            {
+                "data_quality_assurance": [],
+                "dataset_id": {
+                    "identifier": "https://sandbox.dissco.tech/",
+                    "type": "url"
+                },
+                "description": "DiSSCover (formerly UCAS) will provide event-based curation and annotation functions on the Digital Specimens for experts in the community and for machines. Transactions on the data will be stored as well as provenance information related to the curation or annotation events.",
+                "distribution": [
+                    {
+                        "access_url": "https://sandbox.dissco.tech/",
+                        "data_access": "closed",
+                        "description": "DiSSCover (hereinafter referred to as: \u201cthe service\u201d) provides an interface for Digital Specimen search and annotation. It uses the DiSSCo Login service for authentication.",
+                        "format": [],
+                        "license": [],
+                        "title": "DiSSCover"
+                    }
+                ],
+                "keyword": [
+                    "Digital Specimen",
+                    "Annotation",
+                    "Curation"
+                ],
+                "language": "eng",
+                "metadata": [],
+                "personal_data": "unknown",
+                "security_and_privacy": [],
+                "sensitive_data": "unknown",
+                "technical_resource": [],
+                "title": "DiSSCover (Unified Curation & Annotation System)",
+                "type": "Service"
+            }
+        ],
+        "dmp_id": {
+            "identifier": "https://github.com/TU-NHM/DiSSCo_DMP",
+            "type": "url"
+        },
+        "ethical_issues_exist": "no",
+        "language": "eng",
+        "modified": "2025-01-17",
+        "project": [
+            {
+                "description": "The Distributed System of Scientific Collections is a state-of-the-art Research Infrastructure (RI) for natural science collections. Its aim is to digitally unify all European natural science assets into a single, integrated European collection, providing common access, standardised curation, and harmonised policies and practices across countries. Additionally, DiSSCo ensures that all data adheres to the FAIR principles (Findable, Accessible, Interoperable, and Reusable).",
+                "end": "2025-05-31",
+                "funding": [
+                    {
+                        "funder_id": {
+                            "identifier": "European Commission",
+                            "type": "other"
+                        },
+                        "funding_status": "granted",
+                        "grant_id": {
+                            "identifier": "101130121",
+                            "type": "other"
+                        }
+                    }
+                ],
+                "start": "2023-12-01",
+                "title": "DiSSCo Transition"
+            }
+        ],
+        "title": "DiSSCo machine-actionable DMP"
+    }
+}
