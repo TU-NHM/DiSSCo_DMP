@@ -5,7 +5,7 @@ Data Management Plan for DiSSCo infrastructure.
 | Date and version no. | Author | Comments/Changes |
 | --- | --- | --- |
 | 03.01.2025, v0.1 | Kessy Abarenkov | Adding basic structure and initial content |
-| 16.01.2025, v0.2 | Kessy Abarenkov | Adding additional text to various sections and intruducing a new section about the maDMP |
+| 16.01.2025, v0.2 | Kessy Abarenkov | Adding additional text to various sections and introducing a new section about the maDMP |
 
 ## Table of Contents
 1. [Introduction](#introduction)
