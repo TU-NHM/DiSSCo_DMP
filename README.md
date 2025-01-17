@@ -308,7 +308,7 @@ Test implementation of the DiSSCo maDMP is available on [PlutoF platform](https:
 | **FAIR** | Findable, Accessible, Interoperable, Reusable |
 | **FDO** | FAIR Digital Object |
 | **GBIF** | Global Biodiversity Information Facility |
-| **maDMP** | machine-actiobale Data Management Plan |
+| **maDMP** | machine-actionable Data Management Plan |
 | **MICS** | Minimum Information standard for Digital Collections |
 | **MIDS** | Minimum Information about a Digital Specimen |
 | **PID** | Persistent Identifier |
