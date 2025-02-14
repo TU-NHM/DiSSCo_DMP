@@ -244,6 +244,23 @@ DiSSCo aims to provide a DOI for every individual digital specimen in European n
 To date, DiSSCo has employed DOIs as identifiers for Digital Specimens ([Deeleman-Reinhold et al., 2024](#deeleman-reinhold-et-al-2024)), enabling both citation and persistent referencing of its resources.
 
 ## Mutability, versioning and obsolescence
+The data content of Digital Specimens and other object types is not static, for a variety of reasons: New supplementary information about a specimen is found; new knowledge comes to light that leads to a reassessment of a previously classified specimen; images associated with a specimen might be found to be faulty (out of focus, wrong exposure, etc.); errors in transcribing label data have been made. All these and other reasons are reasonable cause to modify the data associated with a specimen. Similar considerations apply for other object types. Specifically, transaction related object types are living records of the status of a transaction, updated as a result of transaction events.
+
+Each Digital Specimen object in the DiSSCo infrastructure has a single DiSSCo Facility as its current owner (ownedBy attribute). Approved and authorised experts, including the owner or their agent are permitted to change the Authoritative Data of a Digital Specimen whilst others can only use the specimen or add to or modify its Supplementary Data (and that also might have some access control). All changes, additions and deletions to contents of a Digital Specimen or Digital Collection object must be recorded as part of the object’s history (Provenance Data), including details of who made the change.
+
+Thus, the principle object types in DiSSCo are treated as mutable objects with access control and object history (provenance).
+
+> [!NOTE]
+> Users without approval to modify specimen objects can make suggestions for modifications or additions by recording them as Annotations associated with the object. These are made through and recorded by the Unified Curation and Annotation Service (DiSSCover) and presented when the Digital Specimen is requested/viewed.
+
+Because of the mutability of objects, resolution of an object’s identifier always returns the latest version of that object. Thus, users referring to or using a Digital Specimen are assured they are always receiving or working with the current/latest information about a specimen at the specific moment of use.
+
+The DiSSCo data versioning approach relies on timestamped records of change (provenance data about actions performed on an object) in conjunction with a reconstruction service to provide a 'version' at a specific date and time in the past.
+
+The general policy is that once created, Digital Specimens, Digital Collections, other object types and their associated identifiers exist permanently; for the lifetime of the DiSSCo research infrastructure and beyond.
+
+> [!NOTE]
+> List of cases where object deletion or declaration as obsolete is needed can be found in D6.6 ([Hardisty, 2019](#hardisty-2019)).
 
 ## Service management and service level agreements
 Data service management covers the entire spectrum of services provided by DiSSCo Hub to its community of users that includes researchers, collections staff, non-governmental organisations, students and citizens, as well as members of the Press/media. DiSSCo does not offer its services under formal Service Level Agreements (SLA) because to do so would admit that non-compliance with stated levels of service is open to enforcement by legal means and compensation, which is not appropriate when end-users are not paying for the services they use. DiSSCo prefers an approach based upon openness, transparency, standards and best practice whereby trust is earned through demonstrated availability and reliability of service.
@@ -252,7 +269,9 @@ By the same principle, DiSSCo does not enter into and enforce SLAs with those se
 
 ## Data quality and minimum information standards
 
-## Data security
+Minimum Information about a Digital Specimen ([MIDS](https://www.tdwg.org/community/cd/mids/)) defines the essential information elements required for providing access to specimens within a digital framework. As a best practice, DiSSCo aims to achieve at least MIDS level 2 for Digital Specimens.
+
+<!-- ## Data security -->
 
 ## Data provenance
 One essential characteristic (**DMpr 8**) of data management within DiSSCo is the traceability (provenance) of specimens. According to World Wide Web Consortiom (W3C):
@@ -267,8 +286,9 @@ To support this, DiSSCo has developed a provenance data model based on the W3C P
 > More detailed information about the provenance data model for DiSSCo data is available in D6.4 ([Weiland et al., 2022](#weiland-et-al-2022)).
 
 ## Ethical and legal aspects
+The Access and Data Policies for the DiSSCo Infrastructure are currently being developed as part of the DiSSCo Transition project (T1.3 Policy Framework).
 
-### Compliance with GDPR
+<!-- ### Compliance with GDPR -->
 
 ## Software maintenance and sustainability
 
