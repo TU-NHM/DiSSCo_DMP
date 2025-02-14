@@ -1,0 +1,101 @@
+{
+    "dmp": {
+        "contact": {
+            "contact_id": {
+                "identifier": "0000-0001-5526-4845",
+                "type": "orcid"
+            },
+            "mbox": "kessy.abarenkov@ut.ee",
+            "name": "Kessy Abarenkov"
+        },
+        "contributor": [
+            {
+                "contributor_id": {
+                    "identifier": "0000-0001-5526-4845",
+                    "type": "orcid"
+                },
+                "mbox": "kessy.abarenkov@ut.ee",
+                "name": "Kessy Abarenkov",
+                "role": [
+                    "contributor"
+                ]
+            }
+        ],
+        "cost": [],
+        "created": "2024-12-17",
+        "dataset": [
+            {
+                "data_quality_assurance": [],
+                "dataset_id": {
+                    "identifier": "10.5281/zenodo.2621055",
+                    "type": "doi"
+                },
+                "description": "ICEDIG deliverable D2.3 reports on the outcomes of a number of workshops and the Task Group Collection Digitisation Dashboards (TG CDD) discussions and proposes preliminary schemes to describe natural history collections so that they can be summarized, visualized and consulted in a Collection Digitisation Dashboard. The report includes descriptions schemes based on taxonomy, stratigraphy, storage type, geographic regions and levels of digitisation. The schemes are piloted in two different dashboards, one for DiSSCo (Distributed System of Scientific Collections - dissco.eu) and one for the Dutch collection holding institutes.",
+                "distribution": [
+                    {
+                        "data_access": "open",
+                        "format": [],
+                        "license": [],
+                        "title": "Design of a Collection Digitisation Dashboard"
+                    }
+                ],
+                "issued": "2019-04-02",
+                "keyword": [
+                    "natural history collection",
+                    "digitisation",
+                    "dashboard",
+                    "TDWG",
+                    "ICEDIG",
+                    "DiSSCo",
+                    "collection description",
+                    "classification"
+                ],
+                "language": "eng",
+                "metadata": [
+                    {
+                        "language": "eng",
+                        "metadata_standard_id": {
+                            "identifier": "http://datacite.org/schema/kernel-4",
+                            "type": "url"
+                        }
+                    }
+                ],
+                "personal_data": "unknown",
+                "security_and_privacy": [],
+                "sensitive_data": "unknown",
+                "technical_resource": [],
+                "title": "Design of a Collection Digitisation Dashboard",
+                "type": "Report"
+            }
+        ],
+        "dmp_id": {
+            "identifier": "https://github.com/TU-NHM/DiSSCo_DMP",
+            "type": "url"
+        },
+        "ethical_issues_exist": "no",
+        "language": "eng",
+        "modified": "2025-02-13",
+        "project": [
+            {
+                "description": "The Distributed System of Scientific Collections is a state-of-the-art Research Infrastructure (RI) for natural science collections. Its aim is to digitally unify all European natural science assets into a single, integrated European collection, providing common access, standardised curation, and harmonised policies and practices across countries. Additionally, DiSSCo ensures that all data adheres to the FAIR principles (Findable, Accessible, Interoperable, and Reusable).",
+                "end": "2025-05-31",
+                "funding": [
+                    {
+                        "funder_id": {
+                            "identifier": "European Commission",
+                            "type": "other"
+                        },
+                        "funding_status": "granted",
+                        "grant_id": {
+                            "identifier": "101130121",
+                            "type": "other"
+                        }
+                    }
+                ],
+                "start": "2023-12-01",
+                "title": "DiSSCo Transition"
+            }
+        ],
+        "title": "DiSSCo machine-actionable DMP"
+    }
+}
