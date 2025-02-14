@@ -291,11 +291,14 @@ The RDA Common Standard for machine-actionable DMPs accepts dataset and resource
 Test implementation of the DiSSCo maDMP is available on [PlutoF platform](https://app.plutof.ut.ee/dmp/view/24). A few examples are listed in Table 4.
 
 <a name="table-4"></a>**Table 4.** Example datasets for the maDMP of the DiSSCo infrastructure.
-| Dataset or service | Type | Dataset description in JSON |
-| --- | --- | --- |
-| DiSSCover (Unified Curation & Annotation System) | Service or Interactive resource | [JSON](https://github.com/TU-NHM/DiSSCo_DMP/blob/main/datasets/DiSSCo_DMP_dataset_DiSSCover.json) |
-| ELViS (European Loans and Visits System) | Service or Interactive resource | [JSON](https://github.com/TU-NHM/DiSSCo_DMP/blob/main/datasets/DiSSCo_DMP_dataset_ELViS.json) |
-| Provisional Data Management Plan for DiSSCo infrastructure. Deliverable D6.6 | ScholarlyArticle | [JSON](https://github.com/TU-NHM/DiSSCo_DMP/blob/main/datasets/DiSSCo_DMP_dataset_ICEDIG_D6_6.json) |
+| Dataset or service | Type | DOI | Dataset description in JSON |
+| --- | --- | --- | --- |
+| DiSSCover (Unified Curation & Annotation System) | Service |  | [JSON](https://github.com/TU-NHM/DiSSCo_DMP/blob/main/datasets/DiSSCo_DMP_dataset_DiSSCover.json) |
+| ELViS (European Loans and Visits System) | Service |  | [JSON](https://github.com/TU-NHM/DiSSCo_DMP/blob/main/datasets/DiSSCo_DMP_dataset_ELViS.json) |
+| Provisional Data Management Plan for DiSSCo infrastructure. Deliverable D6.6 | ScholarlyArticle | [10.5281/zenodo.3532937](https://dx.doi.org/10.5281/zenodo.3532937) | [JSON](https://github.com/TU-NHM/DiSSCo_DMP/blob/main/datasets/DiSSCo_DMP_dataset_ICEDIG_D6_6.json) |
+| Chrysilla lauta Thorell, 1887 | digitalSpecimen | [10.3535/g0g-g7d-n5j](https://dx.doi.org/10.3535/g0g-g7d-n5j) | [JSON](https://github.com/TU-NHM/DiSSCo_DMP/blob/main/datasets/DiSSCo_DMP_dataset_digitalSpecimen.json) |
+| DiSSCo/dissco-core-annotation-processing-service: v1.0.0 | SoftwareSourceCode | [10.5281/zenodo.14383595](https://dx.doi.org/10.5281/zenodo.14383595) | [JSON](https://github.com/TU-NHM/DiSSCo_DMP/blob/main/datasets/DiSSCo_DMP_dataset_SoftwareSourceCode.json) |
+| Design of a Collection Digitisation Dashboard | Report | [10.5281/zenodo.2621055](https://dx.doi.org/10.5281/zenodo.2621055) | [JSON](https://github.com/TU-NHM/DiSSCo_DMP/blob/main/datasets/DiSSCo_DMP_dataset_Report.json) |
 
 ## Glossary of terms and abbreviations
 | Abbreviation | Definition |
